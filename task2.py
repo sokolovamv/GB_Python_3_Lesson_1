@@ -3,9 +3,12 @@
 # “Число является простым, если делится нацело только на единицу и на себя”. 
 # Сделайте ограничение на ввод отрицательных чисел и чисел больше 100 тысяч.
 
-number = int(input('Введите число от 0 до 100000: '))
+# Ввод диапазона числа
+lower_limit = 0
+upper_limit = 1000
+number = int(input('Введите число от {lower_limit} до {upper_limit}: '))
 # проверка на простое число
-if number > 2 and number < 100001:
+if number > 2 and number < upper_limit + 1:
     for i in range(2, number // 2 + 1):
         # проверка на кратность к числу
         if number % i == 0:
