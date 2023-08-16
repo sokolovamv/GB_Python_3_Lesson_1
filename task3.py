@@ -9,7 +9,7 @@ attempts = 10
 attempt = 0
 # уменьшаем диапазон для подсказки
 while attempt < attempts:
-    user_num = int(input(f'Введите число от {lower_limit} до {upper_limit})'))
+    user_num = int(input(f'Введите число от {lower_limit} до {upper_limit}: '))
     if user_num > rand_num:
         print('Введите число меньше')
         upper_limit = user_num
