@@ -6,7 +6,7 @@
 # Ввод диапазона числа
 lower_limit = 0
 upper_limit = 1000
-number = int(input('Введите число от {lower_limit} до {upper_limit}: '))
+number = int(input(f'Введите число от {lower_limit} до {upper_limit}: '))
 # проверка на простое число
 if number > 2 and number < upper_limit + 1:
     for i in range(2, number // 2 + 1):
